@@ -35,7 +35,7 @@ Push a download item to GentleDownloader.
     Specify the option if you do not want GentleDownloader to wait
 
 +   `(optional) --uid uniqueID` :
-    GentleDownloader restrains intensive accesses with the host of URL in default. If you specify _uniqueID_, GentleDownloader will treat all URL that has same *uniqueID* as a same host.
+    GentleDownloader restrains intensive accesses with the host of URL in default. If you specify _uniqueID_, GentleDownloader will treat all URL that has same _uniqueID_ as a same host.
 
 Tuning
 ---------------
@@ -44,3 +44,8 @@ GentleDownloader does not access a same host within 15 seconds in default. You c
 ```ruby
 INTERVAL = 15
 ```
+
+Troubleshooting
+---------------
+If GentleDownloader cannot download any files, remove box.kct and add.kct and restart GentleDownloader.
+This step will reset the download queue.
