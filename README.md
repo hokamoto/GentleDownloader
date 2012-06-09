@@ -16,16 +16,26 @@ You should install the following libraries as prerequisite to GentleDownloader.
 How to use GentleDownloader
 ---------------
 Start GentleDownloader.
+
     # ./downloader.rb
+
 GentleDownloader will start as a daemon.
 
 Push a download item to GentleDownloader.
-    # ./addItem.rb [*URL*] [*output*] (--nowait) (--uid *uniqueID*)
 
-    - *URL* A URL that you want to download
-    - *output*  Specify file or directory that GentleDownloader stores the file to
-    - (optional) --nowait  Specify the option if you do not want GentleDownloader to wait
-    - (optional) --uid *uniqueID*  GentleDownloader restrains intensive accesses with the host of URL in default. If you specify *uniqueID*, GentleDownloader will treat all URL that has same *uniqueID* as a same host.
+    # ./addItem.rb [URL] [output] (--nowait) (--uid uniqueID)
+
++   `URL` :
+    A URL that you want to download
+
++   `output` :
+    Specify file or directory that GentleDownloader stores the file to
+
++   `(optional) --nowait` :
+    Specify the option if you do not want GentleDownloader to wait
+
++   `(optional) --uid uniqueID` :
+    GentleDownloader restrains intensive accesses with the host of URL in default. If you specify _uniqueID_, GentleDownloader will treat all URL that has same *uniqueID* as a same host.
 
 Tuning
 ---------------
