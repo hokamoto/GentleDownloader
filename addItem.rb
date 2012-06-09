@@ -8,7 +8,7 @@ require 'digest/md5'
 require 'uri'
 require 'pp'
 
-$base_dir = "/srv/http/downloader"
+$base_dir = File::dirname($0)
 db = DB::new
 
 # open the database
@@ -17,7 +17,7 @@ unless db.open("#{$base_dir}/add.kct", DB::OWRITER | DB::OCREATE)
 end
 
 # get the arguments
-abort 'add.rb [URL] [output file/dir] (--nowait) (--uid uniqueID)' unless ARGV.count >= 2
+abort 'addItem.rb [URL] [output file/dir] (--nowait) (--uid uniqueID)' unless ARGV.count >= 2
 arg_url = ARGV.shift
 arg_output = ARGV.shift
 arg_nowait = false

@@ -38,6 +38,7 @@ outputter = Log4r::FileOutputter.new(
 @locker = Mutex::new
 
 # USER_AGENT = "Mozilla/4.0 (compatible; MSIE 6.0; Windows XP)"
+USER_AGENT = "GentleDownloader/1.0"
 ACCEPT_LANGUAGE = "ja"
 TIMEOUT = 20
 
